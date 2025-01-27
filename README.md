@@ -130,3 +130,5 @@ You can also test the API directly:
 - Implement load balancing
 - Add more complex service interactions
 - Enhance the frontend with more detailed service information and controls
+
+https://roadmap.sh/projects/service-discovery
