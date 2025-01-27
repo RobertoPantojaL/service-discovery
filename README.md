@@ -23,6 +23,10 @@ service-discovery-demo/
 └── README.md
 
 ```
+# Service Discovery Demo
+
+This project demonstrates a simple service discovery system using Consul, with a Node.js backend and a React frontend.
+![Descripción del GIF](./previe.gif)
 
 ## Prerequisites
 
@@ -126,4 +130,3 @@ You can also test the API directly:
 - Implement load balancing
 - Add more complex service interactions
 - Enhance the frontend with more detailed service information and controls
-```
