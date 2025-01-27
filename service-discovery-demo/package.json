@@ -1,0 +1,20 @@
+{
+  "name": "service-discovery-backend",
+  "version": "1.0.0",
+  "description": "Backend for Service Discovery Demo with Consul",
+  "scripts": {
+    "start:consul": "docker-compose up -d",
+    "start:service-a": "node services/serviceA.js",
+    "start:service-b": "node services/serviceB.js",
+    "start:service-c": "node services/serviceC.js",
+    "start:api-gateway": "node api-gateway/index.js",
+    "start:backend": "concurrently \"npm run start:consul\" \"npm run start:service-a\" \"npm run start:service-b\" \"npm run start:service-c\" \"npm run start:api-gateway\""
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "concurrently": "^9.1.2",
+    "consul": "^2.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
